@@ -11,10 +11,15 @@
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "cd contract && npm test",
     "test:integration": "cd integration-tests && npm test -- -- \"./contract/build/hello_near.wasm\"",
-    "postinstall": "cd frontend && npm install && cd .. && cd integration-tests && npm install && cd .. && cd contract && npm install"
+    "postinstall": "cd frontend && npm install && cd .. && cd integration-tests && npm install && cd .. && cd contract && npm install",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "near-cli": "^3.3.0"
   },
-  "dependencies": {}
+  "lint-staged": {
+    "*/frontend/*": "prettier --write --ignore-unknown"
+  }
 }
