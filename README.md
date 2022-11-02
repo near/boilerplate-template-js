@@ -6,7 +6,7 @@
 </h1>
 
 <div align="center">
-  test-boilerplate-template
+  Test Boilerplate Template React
   <br />
   <br />
   <a href="https://github.com/shelegdmitriy/test-boilerplate-template/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
@@ -49,11 +49,11 @@
 
 ## About
 
-This project is created for easy-to-start as skeleton template in the Pagoda Gallery.
+This project is created for easy-to-start as a React skeleton template in the Pagoda Gallery. It was initialized with [create-near-app]. Clone it and start to build your own gallery project!
 
 ### Built With
 
-[create-near-app]
+[create-near-app], [amazing-github-template]
 
 Getting Started
 ==================
