@@ -53,7 +53,7 @@ This project is created for easy-to-start as a React skeleton template in the Pa
 
 ### Built With
 
-[create-near-app], [amazing-github-template]
+[create-near-app], [amazing-github-template](https://github.com/dec0dOS/amazing-github-template)
 
 Getting Started
 ==================
