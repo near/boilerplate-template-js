@@ -19,8 +19,6 @@
 <div align="center">
 <br />
 
-[![Project license](https://img.shields.io/github/license/shelegdmitriy/test-boilerplate-template.svg?style=flat-square)](LICENSE)
-
 [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/shelegdmitriy/test-boilerplate-template/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with love by shelegdmitriy](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-shelegdmitriy-ff1414.svg?style=flat-square)](https://github.com/shelegdmitriy)
 
@@ -41,7 +39,6 @@
 - [Contributing](#contributing)
 - [Authors & contributors](#authors--contributors)
 - [Security](#security)
-- [License](#license)
 
 </details>
 
@@ -201,7 +198,7 @@ Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you f
 
 ## Authors & contributors
 
-The original setup of this repository is by [FULL_NAME](https://github.com/shelegdmitriy).
+The original setup of this repository is by [Dmitriy Sheleg](https://github.com/shelegdmitriy).
 
 For a full list of all authors and contributors, see [the contributors page](https://github.com/shelegdmitriy/test-boilerplate-template/contributors).
 
@@ -211,9 +208,3 @@ test-boilerplate-template follows good practices of security, but 100% security 
 test-boilerplate-template is provided **"as is"** without any **warranty**. Use at your own risk.
 
 _For more information and to report security issues, please refer to our [security documentation](docs/SECURITY.md)._
-
-## License
-
-This project is licensed under the **MIT license**.
-
-See [LICENSE](LICENSE) for more information.
