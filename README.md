@@ -1,25 +1,25 @@
 <h1 align="center">
-  <a href="https://github.com/shelegdmitriy/test-boilerplate-template">
+  <a href="https://github.com/near/boilerplate-template">
     <!-- Please provide path to your logo here -->
     <img src="docs/images/pagoda_logo.svg" alt="Logo" width="100" height="100">
   </a>
 </h1>
 
 <div align="center">
-  Test Boilerplate Template React
+  Boilerplate Template React
   <br />
   <br />
-  <a href="https://github.com/shelegdmitriy/test-boilerplate-template/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  <a href="https://github.com/near/boilerplate-template/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
-  <a href="https://github.com/shelegdmitriy/test-boilerplate-template/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  <a href="https://github.com/near/boilerplate-template/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
   .
-  <a href="https://github.com/shelegdmitriy/test-boilerplate-template/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  <a href="https://github.com/near/boilerplate-template/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
 </div>
 
 <div align="center">
 <br />
 
-[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/shelegdmitriy/test-boilerplate-template/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/near/boilerplate-template/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with love by shelegdmitriy](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-shelegdmitriy-ff1414.svg?style=flat-square)](https://github.com/shelegdmitriy)
 
 </div>
@@ -167,27 +167,27 @@ On Windows, if you're seeing an error containing `EPERM` it may be related to sp
 
 ## Roadmap
 
-See the [open issues](https://github.com/shelegdmitriy/test-boilerplate-template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/near/boilerplate-template/issues) for a list of proposed features (and known issues).
 
-- [Top Feature Requests](https://github.com/shelegdmitriy/test-boilerplate-template/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/shelegdmitriy/test-boilerplate-template/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/shelegdmitriy/test-boilerplate-template/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+- [Top Feature Requests](https://github.com/near/boilerplate-template/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
+- [Top Bugs](https://github.com/near/boilerplate-template/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
+- [Newest Bugs](https://github.com/near/boilerplate-template/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 
 ## Support
 
 Reach out to the maintainer:
 
-- [GitHub issues](https://github.com/shelegdmitriy/test-boilerplate-template/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
+- [GitHub issues](https://github.com/near/boilerplate-template/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
 
 ## Project assistance
 
-If you want to say **thank you** or/and support active development of PROJECT_NAME:
+If you want to say **thank you** or/and support active development of Boilerplate Template React:
 
-- Add a [GitHub Star](https://github.com/shelegdmitriy/test-boilerplate-template) to the project.
-- Tweet about the PROJECT_NAME.
+- Add a [GitHub Star](https://github.com/near/boilerplate-template) to the project.
+- Tweet about the Boilerplate Template React.
 - Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
 
-Together, we can make test-boilerplate-template **better**!
+Together, we can make Boilerplate Template React **better**!
 
 ## Contributing
 
@@ -200,11 +200,11 @@ Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you f
 
 The original setup of this repository is by [Dmitriy Sheleg](https://github.com/shelegdmitriy).
 
-For a full list of all authors and contributors, see [the contributors page](https://github.com/shelegdmitriy/test-boilerplate-template/contributors).
+For a full list of all authors and contributors, see [the contributors page](https://github.com/near/boilerplate-template/contributors).
 
 ## Security
 
-test-boilerplate-template follows good practices of security, but 100% security cannot be assured.
-test-boilerplate-template is provided **"as is"** without any **warranty**. Use at your own risk.
+Boilerplate Template React follows good practices of security, but 100% security cannot be assured.
+Boilerplate Template React is provided **"as is"** without any **warranty**. Use at your own risk.
 
 _For more information and to report security issues, please refer to our [security documentation](docs/SECURITY.md)._
