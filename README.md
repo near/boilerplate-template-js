@@ -20,7 +20,7 @@
 <br />
 
 [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/near/boilerplate-template/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-[![code with love by shelegdmitriy](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-shelegdmitriy-ff1414.svg?style=flat-square)](https://github.com/shelegdmitriy)
+[![code with love by near](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-near-ff1414.svg?style=flat-square)](https://github.com/near)
 
 </div>
 
