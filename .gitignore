@@ -10,8 +10,8 @@ node_modules
 frontend/dist
 .parcel-cache
 
-# keys
-/templates/react/neardev
+contract/build
+contract/neardev
 
 # testing
 /coverage
