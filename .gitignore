@@ -8,7 +8,7 @@ node_modules
 # build
 /out
 frontend/dist
-.parcel-cache
+frontend/.next
 
 contract/build
 contract/neardev
