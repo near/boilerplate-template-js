@@ -9,9 +9,8 @@
     "@types/bn.js": "^5.1.0",
     "@types/node": "^18.6.2",
     "ava": "^4.2.0",
-    "near-workspaces": "^3.2.1",
+    "near-workspaces": "^3.2.2",
     "ts-node": "^10.8.0",
     "typescript": "^4.7.2"
-  },
-  "dependencies": {}
+  }
 }

@@ -2,7 +2,7 @@ import * as React from 'react';
 
 type Props = {
   accountId: string;
-  onClick: React.MouseEventHandler
+  onClick: React.MouseEventHandler;
 };
 
 const SignOutButton = React.memo(({ accountId, onClick }: Props) => {
