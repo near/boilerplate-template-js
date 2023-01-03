@@ -35,11 +35,11 @@ export const useWalletSelector = (contractId: string | undefined, network: strin
       modules: [
         setupMyNearWallet({ iconUrl: myNearWalletIconUrl.src }),
         setupNearWallet({ iconUrl: nearWalletIconUrl.src }),
-      ]
+      ],
     });
 
     modal = setupModal(selector, {
-      contractId
+      contractId,
     });
 
     const state = selector.store.getState();
@@ -79,18 +79,25 @@ export const useWalletSelector = (contractId: string | undefined, network: strin
     const { network } = selector.options;
     const provider = new providers.JsonRpcProvider({ url: network.nodeUrl });
 
-    let res = await provider.query({
+    let res = (await provider.query({
       request_type: 'call_function',
       account_id: contractId,
       method_name: method,
       args_base64: Buffer.from(JSON.stringify(args)).toString('base64'),
       finality: 'optimistic',
-    }) as any;
+    })) as any;
     return JSON.parse(Buffer.from(res.result).toString());
   };
 
   // Call a method that changes the contract's state
-  const callMethod = async (contractId: string, accountId: string, method: string, args = {}, gas = THIRTY_TGAS, deposit = NO_DEPOSIT) => {
+  const callMethod = async (
+    contractId: string,
+    accountId: string,
+    method: string,
+    args = {},
+    gas = THIRTY_TGAS,
+    deposit = NO_DEPOSIT,
+  ) => {
     // Sign a transaction with the "FunctionCall" action
     const wallet = await selector.wallet();
     console.log('wallet | callMethod: ', wallet);
