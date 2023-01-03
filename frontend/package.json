@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "license": "(MIT AND Apache-2.0)",
   "scripts": {
-    "start": "./start.sh",
-    "build": "parcel build index.html --public-url ./",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "dotenv -c -e ../contract/neardev/dev-account.env -- ./start.sh",
     "prettier:check": "prettier --check ."
   },
   "devDependencies": {
@@ -16,7 +17,6 @@
     "@types/regenerator-runtime": "^0.13.1",
     "env-cmd": "^10.1.0",
     "nodemon": "^2.0.16",
-    "parcel": "^2.6.0",
     "prettier": "2.7.1",
     "process": "^0.11.10",
     "react-test-renderer": "^18.1.0",
@@ -35,10 +35,11 @@
     "@near-wallet-selector/nightly-connect": "^7.0.0",
     "@near-wallet-selector/sender": "^7.0.0",
     "@near-wallet-selector/wallet-connect": "^7.0.0",
+    "dotenv-cli": "^6.0.0",
     "near-api-js": "^0.44.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "regenerator-runtime": "^0.13.9"
+    "next": "^13.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
