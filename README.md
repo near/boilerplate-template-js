@@ -50,7 +50,7 @@
 
 ## About
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [`tailwindcss`](https://tailwindcss.com/docs/guides/nextjs) created for easy-to-start as a React skeleton template in the Pagoda Gallery. Smart-contract was initialized with [create-near-app]. Clone it and start to build your own gallery project!
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [`tailwindcss`](https://tailwindcss.com/docs/guides/nextjs) created for easy-to-start as a React skeleton template in the Pagoda Gallery. Smart-contract was initialized with [create-near-app]. Use this template and start to build your own gallery project!
 
 ### Built With
 
