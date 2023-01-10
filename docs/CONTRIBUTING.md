@@ -12,18 +12,17 @@ To set up a development environment, please follow these steps:
    ```sh
    git clone https://github.com/near/boilerplate-template
    ```
-
 2. Navigate to your project:
    ```sh
    cd boilerplate-template
    ```
-3. Build your contract:
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Build your contract:
    ```sh
    npm run build
-   ```
-4. Test your contract in NEAR SandBox:
-   ```sh
-   npm test
    ```
 5. Deploy your contract to NEAR TestNet with a temporary dev account:
    ```sh
@@ -31,7 +30,16 @@ To set up a development environment, please follow these steps:
    ```
 6. Start your frontend:
    ```sh
-   npm start
+   npm run start
+   cd boilerplate-template-frontend
+   ```
+7. Start your frontend:
+   ```sh
+   npm run dev
+   ```
+8. Test your contract in NEAR SandBox:
+   ```sh
+   npm run test
    ```
 
 ## Issues and feature requests

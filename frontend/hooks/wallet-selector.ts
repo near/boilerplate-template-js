@@ -6,7 +6,7 @@ import { setupWalletSelector } from '@near-wallet-selector/core';
 import type { WalletSelectorModal } from '@near-wallet-selector/modal-ui';
 import { setupModal } from '@near-wallet-selector/modal-ui';
 import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet';
-import myNearWalletIconUrl from '@near-wallet-selector/my-near-wallet//assets/my-near-wallet-icon.png';
+import myNearWalletIconUrl from '@near-wallet-selector/my-near-wallet/assets/my-near-wallet-icon.png';
 import { setupNearWallet } from '@near-wallet-selector/near-wallet';
 import nearWalletIconUrl from '@near-wallet-selector/near-wallet/assets/near-wallet-icon.png';
 import { useCallback, useEffect, useState } from 'react';
@@ -76,7 +76,7 @@ export const useWalletSelector = (contractId: string | undefined, network: strin
 
   // Make a read-only call to retrieve information from the network
   const viewMethod = async (contractId: string, method: string, args = {}) => {
-    const { network } = selector.options;
+    const { network } = selector!.options;
     const provider = new providers.JsonRpcProvider({ url: network.nodeUrl });
 
     let res = (await provider.query({
@@ -99,7 +99,7 @@ export const useWalletSelector = (contractId: string | undefined, network: strin
     deposit = NO_DEPOSIT,
   ) => {
     // Sign a transaction with the "FunctionCall" action
-    const wallet = await selector.wallet();
+    const wallet = await selector!.wallet();
     console.log('wallet | callMethod: ', wallet);
 
     return await wallet.signAndSendTransaction({
