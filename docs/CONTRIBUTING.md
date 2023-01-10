@@ -31,7 +31,7 @@ To set up a development environment, please follow these steps:
 6. Start your frontend:
    ```sh
    npm run start
-   cd boilerplate-template-frontend
+   cd boilerplate-template
    ```
 7. Start your frontend:
    ```sh
