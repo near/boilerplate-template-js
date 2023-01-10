@@ -1,5 +1,0 @@
-node_modules
-frontend/dist
-contract/build
-contract/src/contract.ts
-integration-tests/src/main.ava.ts

@@ -15,8 +15,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Format and lint check
-        run: npm run lint && npm run prettier:check
+      - name: Lint check
+        run: npm run lint
 
       - name: Test building a project
         run: npm run build
