@@ -6,7 +6,7 @@ import ExplainText from '../components/ExplainText';
 
 type Props = {
   contractName: string;
-}
+};
 export default function Home({ contractName }: Props) {
   // const { accountId, modal, signOut } = useWalletSelector(contractName);
   return (
@@ -24,7 +24,6 @@ export default function Home({ contractName }: Props) {
           <ExplainText />
         </div>
       </main>
-
     </>
   );
 }

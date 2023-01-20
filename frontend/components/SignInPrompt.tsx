@@ -16,16 +16,21 @@ const SignInPrompt = ({ greeting, onClick }: Props) => {
             </h1>
             <h3>Welcome to NEAR!</h3>
             <p>
-              Your contract is storing a greeting message in the NEAR blockchain. To change it you need to sign in using the
-              NEAR Wallet. It is very simple, just use the button below.
+              Your contract is storing a greeting message in the NEAR blockchain. To change it you need to sign in using
+              the NEAR Wallet. It is very simple, just use the button below.
             </p>
             <p>
-              Do not worry, this app runs in the test network (&quot;testnet&quot;). It works just like the main network (&quot;mainnet&quot;),
-              but using NEAR Tokens that are only for testing!
+              Do not worry, this app runs in the test network (&quot;testnet&quot;). It works just like the main network
+              (&quot;mainnet&quot;), but using NEAR Tokens that are only for testing!
             </p>
             <br />
             <p style={{ textAlign: 'center' }}>
-              <button className='py-2 px-3 bg-sky-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none' onClick={onClick}>Sign in with NEAR Wallet</button>
+              <button
+                className="py-2 px-3 bg-sky-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none"
+                onClick={onClick}
+              >
+                Sign in with NEAR Wallet
+              </button>
             </p>
           </div>
         </div>
