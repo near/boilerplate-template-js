@@ -1,48 +1,56 @@
 import * as React from 'react';
+import { getGreeting, setGreeting } from '../contracts/greeting-contract';
 
 import EducationalText from './EducationalText';
 import SignInPrompt from './SignInPrompt';
 import SignOutButton from './SignOutButton';
-
-import { useWalletSelector } from '../hooks/wallet-selector';
+import { useWalletSelector } from './WalletSelectorContext';
 
 type Props = {
   contractName: string;
 };
 
 const ContractView = ({ contractName }: Props) => {
+  const { selector, modal, accountId } = useWalletSelector();
   const [valueFromBlockchain, setValueFromBlockchain] = React.useState('');
   const [uiPleaseWait, setUiPleaseWait] = React.useState(true);
 
-  const { selector, modal, accountId, signOut, viewMethod, callMethod } = useWalletSelector(contractName);
-  const isSignedIn = selector?.isSignedIn();
+  const isSignedIn = accountId !== null;
 
-  const getGreeting = React.useCallback(async () => {
-    return await viewMethod(contractName, 'get_greeting');
-  }, [contractName, viewMethod]);
+  const handleSignOut = async () => {
+    const wallet = await selector.wallet();
 
-  const setGreeting = async (greeting: string) => {
-    return await callMethod(contractName, accountId!, 'set_greeting', { message: greeting });
+    try {
+      await wallet.signOut();
+    } catch (err) {
+      console.log('Failed to sign out');
+      console.error(err);
+    }
   };
 
   React.useEffect(() => {
     if (selector) {
-      getGreeting()
+      getGreeting(selector, contractName)
         .then(setValueFromBlockchain)
         .catch(alert)
         .finally(() => {
           setUiPleaseWait(false);
         });
     }
-  }, [getGreeting, selector, signOut]);
+  }, [selector, contractName]);
 
   const changeGreeting = (e: any) => {
     e.preventDefault();
+
+    if (!accountId) {
+      return;
+    }
+
     setUiPleaseWait(true);
     const { greetingInput } = e.target.elements;
 
-    setGreeting(greetingInput.value)
-      .then(() => getGreeting())
+    setGreeting(selector, contractName, accountId, greetingInput.value)
+      .then(() => getGreeting(selector, contractName))
       .then(setValueFromBlockchain)
       .finally(() => {
         setUiPleaseWait(false);
@@ -63,7 +71,7 @@ const ContractView = ({ contractName }: Props) => {
                 <p>
                   Hello <span className="font-medium">{accountId}</span>
                 </p>
-                <SignOutButton onClick={() => signOut(contractName)} />
+                <SignOutButton onClick={handleSignOut} />
               </div>
             ) : null}
             <h1 className="font-medium">

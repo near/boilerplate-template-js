@@ -1,14 +1,13 @@
 import Head from 'next/head';
-// import { useWalletSelector } from '../hooks/wallet-selector';
-
 import ContractView from '../components/ContractView';
 import ExplainText from '../components/ExplainText';
+import { WalletSelectorContextProvider } from '../components/WalletSelectorContext';
 
 type Props = {
+  network: 'testnet' | 'mainnet';
   contractName: string;
 };
-export default function Home({ contractName }: Props) {
-  // const { accountId, modal, signOut } = useWalletSelector(contractName);
+export default function Home({ network, contractName }: Props) {
   return (
     <>
       <Head>
@@ -20,7 +19,9 @@ export default function Home({ contractName }: Props) {
       <main>
         <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
           <div className="absolute inset-0 [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-          <ContractView contractName={contractName} />
+          <WalletSelectorContextProvider network={network} createAccessKeyFor={contractName}>
+            <ContractView contractName={contractName} />
+          </WalletSelectorContextProvider>
           <ExplainText />
         </div>
       </main>
@@ -29,6 +30,7 @@ export default function Home({ contractName }: Props) {
 }
 
 Home.getInitialProps = async () => {
-  const contractName = process.env.CONTRACT_NAME || 'guest-book.testnet';
-  return { contractName };
+  const contractName = process.env.NEXT_PUBLIC_CONTRACT_NAME || 'guest-book.testnet';
+  const network = process.env.NEXT_PUBLIC_NEAR_NETWORK === 'mainnet' ? 'mainnet' : 'testnet';
+  return { network, contractName };
 };
