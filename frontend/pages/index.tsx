@@ -6,7 +6,7 @@ import ExplainText from '../components/ExplainText';
 
 type Props = {
   contractName: string;
-}
+};
 export default function Home({ contractName }: Props) {
   // const { accountId, modal, signOut } = useWalletSelector(contractName);
   return (
@@ -24,12 +24,11 @@ export default function Home({ contractName }: Props) {
           <ExplainText />
         </div>
       </main>
-
     </>
   );
 }
 
 Home.getInitialProps = async () => {
-  const contractName = process.env.CONTRACT_NAME || 'guest-book.testnet';
+  const contractName = process.env.NEXT_PUBLIC_CONTRACT_NAME;
   return { contractName };
 };

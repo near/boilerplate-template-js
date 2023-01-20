@@ -6,12 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "dotenv -c -e ../contract/neardev/dev-account.env -- ./start.sh",
+    "start": "next start",
     "lint": "next lint",
     "prettier:check": "prettier --check ."
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.6.0",
     "postcss": "^8.4.20",
@@ -33,7 +32,6 @@
     "@near-wallet-selector/nightly-connect": "^7.4.0",
     "@near-wallet-selector/sender": "^7.4.0",
     "@near-wallet-selector/wallet-connect": "^7.4.0",
-    "dotenv-cli": "^6.0.0",
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
