@@ -30,7 +30,7 @@ export default function Home({ network, contractName }: Props) {
 }
 
 Home.getInitialProps = async () => {
-  const contractName = process.env.NEXT_PUBLIC_CONTRACT_NAME || 'guest-book.testnet';
-  const network = process.env.NEXT_PUBLIC_NEAR_NETWORK === 'mainnet' ? 'mainnet' : 'testnet';
+  const contractName = process.env.NEXT_PUBLIC_CONTRACT_NAME!;
+  const network = process.env.NEXT_PUBLIC_NEAR_NETWORK!;
   return { network, contractName };
 };

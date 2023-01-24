@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "(MIT AND Apache-2.0)",
   "scripts": {
-    "start": "cd frontend && npm run start",
-    "dev": "cd frontend && npm run dev",
+    "start": "npm run deploy:check && cd frontend && npm run start",
+    "dev": "npm run deploy:check && cd frontend && npm run dev",
     "deploy": "cd contract && npm run deploy",
     "build": "npm run build:contract && npm run build:frontend",
     "build:frontend": "cd frontend && npm run build",
@@ -15,7 +15,8 @@
     "postinstall": "cd frontend && npm install && cd .. && cd integration-tests && npm install && cd .. && cd contract && npm install",
     "prepare": "husky install",
     "lint": "cd frontend && npm run lint",
-    "prettier:check": "cd frontend && npm run prettier:check"
+    "prettier:check": "cd frontend && npm run prettier:check",
+    "deploy:check": "cd contract && ./check-deploy.sh"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

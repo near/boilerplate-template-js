@@ -30,19 +30,24 @@
 <details open="open">
 <summary>Table of Contents</summary>
 
-- [About](#about)
-  - [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 - [Usage](#usage)
-- [Deploy on Vercel](#deploy-on-vercel)
-- [Roadmap](#roadmap)
-- [Support](#support)
-- [Project assistance](#project-assistance)
-- [Contributing](#contributing)
-- [Authors & contributors](#authors--contributors)
-- [Security](#security)
+- [Exploring The Code](#exploring-the-code)
+- [Deploy](#deploy)
+  - [Step 0: Install near-cli (optional)](#step-0-install-near-cli-optional)
+  - [Step 1: Create an account for the contract](#step-1-create-an-account-for-the-contract)
+  - [Step 2: deploy the contract](#step-2-deploy-the-contract)
+  - [Step 3: set contract name in your frontend code](#step-3-set-contract-name-in-your-frontend-code)
+- [Troubleshooting](#troubleshooting)
+  - [Deploy on Vercel](#deploy-on-vercel)
+  - [Roadmap](#roadmap)
+  - [Support](#support)
+  - [Project assistance](#project-assistance)
+  - [Contributing](#contributing)
+  - [Authors \& contributors](#authors--contributors)
+  - [Security](#security)
 
 </details>
 
@@ -85,12 +90,15 @@ Deploy your contract to TestNet with a temporary dev account:
 Usage
 =====
 
-Start your frontend:
+Start your frontend in development mode:
+
+    npm run dev
+
+Start your frontend in production mode:
 
     npm run start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 
 Test your contract:
 
@@ -155,9 +163,9 @@ Replace `PATH_TO_WASM_FILE` with the `wasm` that was generated in `contract` bui
 Step 3: set contract name in your frontend code
 -----------------------------------------------
 
-Modify the line in `contract/neardev/dev-account.env` that sets the account name of the contract. Set it to the account id you used above.
+Modify `NEXT_PUBLIC_CONTRACT_NAME` in `frontend/.env.local` that sets the account name of the contract. Set it to the account id you used above.
 
-    CONTRACT_NAME=near-blank-project.YOUR-NAME.testnet
+    NEXT_PUBLIC_CONTRACT_NAME=near-blank-project.YOUR-NAME.testnet
 
 
 Troubleshooting
