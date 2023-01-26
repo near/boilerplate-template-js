@@ -112,7 +112,7 @@ Exploring The Code
 2. The frontend code lives in the `/frontend` folder. You can start editing the page by
    modifying `frontend/pages/index.tsx`. The page auto-updates as you edit the file.
    This is your entrypoint to learn how the frontend connects to the NEAR blockchain.
-3. Test your contract: `npm test`, this will run the tests in `integration-tests` directory.
+3. Test your contract (must use node v16): `npm test`, this will run the tests in `integration-tests` directory.
 4. [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `frontend/pages/api/hello.ts`.
 5. The `frontend/pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 6. This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
